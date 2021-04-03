@@ -6,7 +6,7 @@ int main()
 {
     srand(time(NULL));
     int tentativi=0, numeroIn=0, numeroRan = (rand()%100)+1;
-   	printf("Hai sette tentativi di risposta\n");
+    printf("Hai sette tentativi di risposta\n");
     while(numeroIn!=numeroRan && tentativi<7)
     {
         printf("inserisci numero\n");
@@ -24,19 +24,20 @@ int main()
         }
         
         ++tentativi;
-   		
 
     }
     
-    if(tentativi<=7 && numeroIn==numeroRan){
+    if(tentativi<=7 && numeroIn==numeroRan)
+    {
+	    
     	printf("il numero e' esatto");
     	
-	}
+     }
 	
-	else{
+     else
+     {
+	printf("hai esaurito i tentativi il numero random era %d", numeroRan);
 		
-		printf("hai esaurito i tentativi il numero random era %d", numeroRan);
-		
-	}
+      }
     
 }
